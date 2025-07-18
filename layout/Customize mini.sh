@@ -8,8 +8,13 @@ echo "---------------------------------------"
 # Obtener el directorio del usuario actual
 USER_HOME=$(eval echo ~$USER)
 
-# Ruta principal del tema Mini (en función del directorio del usuario)
-THEME_DIR="$USER_HOME/.emulationstation/themes/mini"
+# Buscar carpeta que comience por 'mini' en la ruta de temas
+THEME_DIR=$(find "$USER_HOME/.emulationstation/themes/" -maxdepth 1 -type d -name "mini*" | head -n 1)
+
+if [ ! -d "$THEME_DIR" ]; then
+    echo "No se encontró ninguna carpeta que empiece por 'mini' en la ruta de temas."
+    exit 1
+fi
 
 # Ruta donde se almacenan las plantillas
 LAYOUT_DIR="$THEME_DIR/layout"
@@ -23,7 +28,6 @@ declare -A TEMPLATES=(
     ["psx"]="PlayStation"
     ["nes"]="Nintendo"
     ["snes-usa"]="Super Nintendo - USA"
-   
 )
 
 # Crear el menú con dialog mostrando solo los nombres descriptivos
