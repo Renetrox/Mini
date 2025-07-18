@@ -8,7 +8,7 @@ echo "---------------------------------------"
 # Obtener el directorio del usuario actual
 USER_HOME=$(eval echo ~$USER)
 
-# Ruta principal del tema Pi-Station-X (en función del directorio del usuario)
+# Ruta principal del tema Mini (en función del directorio del usuario)
 THEME_DIR="$USER_HOME/.emulationstation/themes/mini"
 
 # Ruta donde se almacenan las plantillas
@@ -32,7 +32,7 @@ for key in "${!TEMPLATES[@]}"; do
     MENU_OPTIONS+=("$key" "${TEMPLATES[$key]}")
 done
 
-CHOICE=$(dialog --title "Personalizar 'Pi Station X' / Customize 'Pi Station X'" \
+CHOICE=$(dialog --title "Personalizar 'Mini' / Mini'" \
                 --menu "Selecciona una plantilla para aplicar: / Select a template to apply:" \
                 15 50 8 \
                 "${MENU_OPTIONS[@]}" 3>&1 1>&2 2>&3)

@@ -91,7 +91,7 @@ license:		Creative Commons NC-BY-SA-4.0
              <origin>0 0</origin>
     		 <pos>0 0</pos>
     		 <size>1 1</size>
-    		 <path>./_inc/images/main1.png</path>
+    		 <path>./layout/snes/main1.png</path>
     		 <zIndex>90</zIndex>
 			</image>
 			
@@ -99,7 +99,7 @@ license:		Creative Commons NC-BY-SA-4.0
              <origin>0 0</origin>
     		 <pos>0.35 0.06</pos>
     		 <maxSize>0.29 0.29</maxSize>
-    		 <path>./_inc/images/system_help.png</path>
+    		 <path>./layout/snes/system_help.png</path>
     		 <zIndex>100</zIndex>
 			</image>
 			
@@ -135,7 +135,7 @@ license:		Creative Commons NC-BY-SA-4.0
     	<origin>0 0</origin>
     	<pos>0 0</pos>
     	<size>1 1</size>
-    	<path>./_inc/images/main2.png</path>
+    	<path>./layout/snes/main2.png</path>
     	<zIndex>09</zIndex> <!-- Mayor que el resto para que esté encima -->
 	</image>
 
