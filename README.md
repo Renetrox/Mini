@@ -4,7 +4,7 @@
 
 
 
- # 🎮 Tema Mini para EmulationStation (RetroPie)
+# 🎮 Tema Mini para EmulationStation (RetroPie)
 
 Tema visual liviano y minimalista para EmulationStation, ideal para pantallas pequeñas o configuraciones portátiles. Compatible con múltiples sistemas y preparado para integrarse con el `retropiemenu` de RetroPie.
 
@@ -25,3 +25,38 @@ Tema visual liviano y minimalista para EmulationStation, ideal para pantallas pe
 
 ```bash
 git clone https://github.com/TU_USUARIO/tema-mini.git
+
+    Copiá la carpeta del tema a la ruta:
+
+~/.emulationstation/themes/
+
+    Opcional: copiá el script mini_config.sh al menú RetroPie:
+
+cp retropiemenu/mini_config.sh ~/RetroPie/retropiemenu/
+
+    Ejecutá el script desde el menú RetroPie o manualmente:
+
+bash ~/RetroPie/retropiemenu/mini_config.sh
+
+🧪 Compatibilidad
+
+    RetroPie 4.8 o superior
+
+    Raspberry Pi 3 / 4 / Zero
+
+    Orange Pi / SBC compatibles
+
+    Pantallas pequeñas: 320×240, 480×270, 640×480
+
+📄 Licencia
+
+Este proyecto está bajo la Licencia MIT.
+
+    Basado en el tema mini-es-de de Weestuarty, parte del proyecto emulationstation-de.
+    Se agradece y reconoce su trabajo como base para esta adaptación.
+
+🙌 Créditos
+
+    Autor original: Weestuarty
+
+    Adaptación y personalización: Renetrox
