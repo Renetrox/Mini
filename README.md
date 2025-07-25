@@ -30,13 +30,13 @@ git clone https://github.com/TU_USUARIO/tema-mini.git
 
 ~/.emulationstation/themes/
 
-    Opcional: copiá el script mini_config.sh al menú RetroPie:
+    Opcional: copiá el script Customize mini.sh al menú RetroPie:
 
 cp retropiemenu/mini_config.sh ~/RetroPie/retropiemenu/
 
     Ejecutá el script desde el menú RetroPie o manualmente:
 
-bash ~/RetroPie/retropiemenu/mini_config.sh
+bash ~/RetroPie/retropiemenu/Customize mini.sh
 
 🧪 Compatibilidad
 
