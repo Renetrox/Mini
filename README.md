@@ -32,7 +32,7 @@ git clone https://github.com/TU_USUARIO/tema-mini.git
 
     Opcional: copiá el script Customize mini.sh al menú RetroPie:
 
-cp retropiemenu/mini_config.sh ~/RetroPie/retropiemenu/
+cp retropiemenu/Customize mini.sh ~/RetroPie/retropiemenu/
 
     Ejecutá el script desde el menú RetroPie o manualmente:
 
