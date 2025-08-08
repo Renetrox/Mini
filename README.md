@@ -1,6 +1,9 @@
 # Mini
  Tema para RetroPie inspirado en consolas "mini". Incluye nes, snes J, snes U, Psx
 ![wallpaper](https://github.com/user-attachments/assets/11d44c6a-248c-4b35-88f5-830449ae4c08)
+<img width="1366" height="768" alt="Captura de pantalla_2025-07-18_12-35-43" src="https://github.com/user-attachments/assets/60b597e4-8bea-4ff0-a485-a5c9fff3a594" />
+<img width="1366" height="768" alt="Captura de pantalla_2025-07-27_09-52-28" src="https://github.com/user-attachments/assets/a5cf1c13-836f-4b82-a6f9-25c43d435e97" />
+<img width="1366" height="768" alt="Captura de pantalla_2025-07-27_09-54-22" src="https://github.com/user-attachments/assets/e4c5f268-357a-498a-bfe9-7ab83f8ca7ba" />
 
 
 
