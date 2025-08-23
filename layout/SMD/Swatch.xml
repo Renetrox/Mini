@@ -97,7 +97,7 @@ license:		Creative Commons NC-BY-SA-4.0
 			
 			<image name="background2" extra="true">
              <origin>0 0</origin>
-    		 <pos>0.75 0.06</pos>
+    		 <pos>0.81 0.06</pos>
     		 <maxSize>0.19 0.19</maxSize>
     		 <path>./layout/SMD/gamelist_help.png</path>
     		 <zIndex>100</zIndex>
