@@ -23,8 +23,9 @@ declare -A TEMPLATES=(
     ["psx"]="PlayStation"
     ["nes"]="Nintendo"
     ["snes-usa"]="Super Nintendo - USA"
-   
+    ["SMD"]="Sega Mega Drive / Genesis"
 )
+
 
 # Crear el menú con dialog mostrando solo los nombres descriptivos
 MENU_OPTIONS=()

@@ -91,21 +91,21 @@ license:		Creative Commons NC-BY-SA-4.0
              <origin>0 0</origin>
     		 <pos>0 0</pos>
     		 <size>1 1</size>
-    		 <path>./layout/SMD/main1.png</path>
+    		 <path>./layout/psx/main1.png</path>
     		 <zIndex>90</zIndex>
 			</image>
 			
 			<image name="background2" extra="true">
              <origin>0 0</origin>
-    		 <pos>0.81 0.06</pos>
+    		 <pos>0.75 0.06</pos>
     		 <maxSize>0.19 0.19</maxSize>
-    		 <path>./layout/SMD/gamelist_help.png</path>
+    		 <path>./layout/psx/gamelist_help.png</path>
     		 <zIndex>100</zIndex>
 			</image>
 			
 			<image name="background3" extra="true">
    			 <origin>0 1</origin>   <!-- Origen en la parte inferior izquierda -->
-   			 <pos>0.19 0.10</pos>     <!-- Posición más a la izquierda (0.05) y manteniendo la altura (0.7) -->
+   			 <pos>0.05 0.10</pos>     <!-- Posición más a la izquierda (0.05) y manteniendo la altura (0.7) -->
    			 <maxSize>0.15 0.079</maxSize>    <!-- Tamaño pequeño -->
    			 <path>./_inc/logos/${system.theme}.svg</path>  <!-- Ruta del logo -->
    			 <zIndex>100</zIndex>    <!-- Asegura que se muestra encima de otros elementos -->
@@ -135,7 +135,7 @@ license:		Creative Commons NC-BY-SA-4.0
     	<origin>0 0</origin>
     	<pos>0 0</pos>
     	<size>1 1</size>
-    	<path>./layout/SMD/main2.png</path>
+    	<path>./layout/psx/main2.png</path>
     	<zIndex>09</zIndex> <!-- Mayor que el resto para que esté encima -->
 	</image>
 
@@ -158,7 +158,7 @@ license:		Creative Commons NC-BY-SA-4.0
 			<alignment>left</alignment>
 			<size>0.50 0.79</size>
 			<pos>0.04 0.10</pos>
-			<scrollSound>./layout/SMD/sound.wav</scrollSound>
+			<scrollSound>./layout/psx/sound.wav</scrollSound>
 			<!--<menuSelectSound>./_inc/audio/menu_select.wav<menuSelectSound>-->
 			<!--<menuBackSound>./_inc/audio/menu_back.wav</menuBackSound>-->
 		</textlist>
@@ -245,7 +245,7 @@ license:		Creative Commons NC-BY-SA-4.0
 			<alignment>left</alignment>
 			<size>0.30 0.52</size>
 			<pos>0.04 0.36</pos>
-			<scrollSound>./layout/SMD/sound.wav</scrollSound>
+			<scrollSound>./layout/psx/sound.wav</scrollSound>
 		</textlist>
 		
 		<text name="md_lbl_rating, md_lbl_lastplayed">
