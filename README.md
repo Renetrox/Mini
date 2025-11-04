@@ -27,7 +27,7 @@ Tema visual liviano y minimalista para EmulationStation, ideal para pantallas pe
 1. Cloná este repositorio:
 
 ```bash
-git clone https://github.com/TU_USUARIO/tema-mini.git
+git clone https://github.com/Renetrox/Mini.git
 
     Copiá la carpeta del tema a la ruta:
 
