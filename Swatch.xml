@@ -26,6 +26,9 @@ license:        Creative Commons NC-BY-SA-4.0
         <!-- X = horizontal (0 izquierda, 1 derecha) / Y = vertical (0 arriba, 1 abajo) -->
         <systemHelpPos>0.36 0.72</systemHelpPos>
 
+        <!-- Tamaño del cuadro de ayuda (normalizado) -->
+        <systemHelpSize>0.27 0.17</systemHelpSize>
+
         <!-- Sonido de scroll en BASIC -->
         <scrollSoundList>./layout/SMD/sound.wav</scrollSoundList>
 
@@ -107,62 +110,73 @@ license:        Creative Commons NC-BY-SA-4.0
     <!-- =====================
          SYSTEM VIEW + CAROUSEL
          ===================== -->
-   	<feature supported="carousel">
-		<view name="system">
+    <feature supported="carousel">
+        <view name="system">
 
-			<carousel name="systemcarousel">
-				<type>horizontal</type>
-				<origin>0.200 0</origin>
-				<size>1.5 0.40</size>
-				<logoScale>1</logoScale>
-				<logoSize>0.21 0.23</logoSize>
-				<color>00000000</color>
-				<maxLogoCount>10</maxLogoCount>
-			</carousel>
+            <carousel name="systemcarousel">
+        <type>horizontal</type>
+        <color>00000000</color>
+        <logoScale>1</logoScale>
 
-			<!-- Fondo principal del layout (viene de bgMain en theme.ini) -->
-			<image name="background" extra="true">
-				<origin>0 0</origin>
-				<pos>0 0</pos>
-				<size>1 1</size>
-				<path>${bgMain}</path>
-				<zIndex>90</zIndex>
-			</image>
+        <pos>-0.0 0.3</pos>
+        <size>1.0 0.4</size>
+        <logoSize>0.1916666666666667 0.3703703703703704</logoSize>
+        <maxLogoCount>5</maxLogoCount>
+        <zIndex>101</zIndex>
+            </carousel>
 
-			<!-- Marco / imagen de ayuda (usa systemHelp + systemHelpPos) -->
-			<image name="background2" extra="true">
-				<origin>0 0</origin>
-				 <pos>${systemHelpPos}</pos>
-    				 <maxSize>${systemHelpSize}</maxSize>
-    				 <path>${systemHelp}</path>
-    				 <zIndex>100</zIndex>
-			</image>
+            <!-- Fondo principal del layout (viene de bgMain en theme.ini) -->
+            <image name="background" extra="true">
+                <origin>0 0</origin>
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${bgMain}</path>
+                <zIndex>90</zIndex>
+            </image>
 
-			<!-- Logo del sistema (posición desde logoPosSystem en theme.ini) -->
-			<image name="background3" extra="true">
-				<origin>0 1</origin>
-				<pos>${logoPosSystem}</pos>
-				<maxSize>0.15 0.079</maxSize>
-				<path>./_inc/logos/${system.theme}.svg</path>
-				<zIndex>100</zIndex>
-			</image>
+            <!-- Marco / imagen de ayuda (usa systemHelp + systemHelpPos) -->
+            <image name="background2" extra="true">
+                <origin>0 0</origin>
+                <pos>${systemHelpPos}</pos>
+                <maxSize>${systemHelpSize}</maxSize>
+                <path>${systemHelp}</path>
+                <zIndex>100</zIndex>
+            </image>
 
-			<text name="systemInfo">
-				<pos>0.10 0.28</pos>
-				<size>0.80 0.14</size>
-				<backgroundColor>FFFFFF00</backgroundColor>
-				<color>d4f4fc</color>
-				<fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
-				<fontSize>0.038</fontSize>
-				<zIndex>100</zIndex>
-			</text>
-		</view>
-	</feature>
+            <!-- Logo del sistema (posición desde logoPosSystem en theme.ini) -->
+            <image name="background3" extra="true">
+                <origin>0 1</origin>
+                <pos>${logoPosSystem}</pos>
+                <maxSize>0.15 0.079</maxSize>
+                <path>./_inc/logos/${system.theme}.svg</path>
+                <zIndex>100</zIndex>
+            </image>
+
+            <text name="systemInfo">
+        <backgroundColor>00000000</backgroundColor>
+        <color>FFFFFF</color>
+                <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+                <fontSize>0.0592592592592593</fontSize>
+
+        <pos>0.00 0.2222222222222222</pos>
+        <size>1 0.050</size>
+        <zIndex>102</zIndex>
+      </text>
+      <image name="carousel_bar" extra="true">
+        <path>./_inc/images/carousel_bar.png</path>
+        <origin>0.5 0</origin>
+
+        <size>0 0.4814814814814815</size>
+        <pos>0.5 0.2185185185185185</pos>
+        <zIndex>100</zIndex>
+      </image>
+        </view>
+    </feature>
 
     <!-- =====================
-         BASIC / DETAILED / VIDEO
+         BASIC / DETAILED / VIDEO / GRID
          ===================== -->
-    <view name="basic, detailed, video">
+    <view name="basic, detailed, video, grid">
         <image name="logo_background" extra="true">
             <path>./_inc/images/bg_systembar.png</path>
             <origin>0 0</origin>
@@ -292,7 +306,8 @@ license:        Creative Commons NC-BY-SA-4.0
             <fontSize>.04</fontSize>
         </text>
 
-        <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_playcount, lbl_description, lbl_media">
+        <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher,
+                     md_lbl_genre, md_lbl_players, md_lbl_playcount, lbl_description, lbl_media">
             <color>508cb0</color>
             <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
             <fontSize>0.020</fontSize>
@@ -425,6 +440,82 @@ license:        Creative Commons NC-BY-SA-4.0
         </video>
     </view>
 
+    <!-- =====================
+         SIMPLE GRID VIEW (UNIVERSAL)
+         ===================== -->
+    <view name="grid">
+
+       <!-- GRID DE JUEGOS -->
+       <imagegrid name="gamegrid">
+          <pos>0.05 0.20</pos>
+          <size>0.55 0.60</size>
+          <margin>0.01 0.02</margin>
+          <padding>0.01 0.01</padding>
+          <imageSource>thumbnail</imageSource>
+          <zIndex>200</zIndex>
+       </imagegrid>
+
+       <!-- METADATOS A LA DERECHA -->
+       <text name="md_name">
+          <pos>0.63 0.20</pos>
+          <size>0.32 0.06</size>
+          <alignment>left</alignment>
+          <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+          <fontSize>0.045</fontSize>
+          <color>FFFFFF</color>
+          <zIndex>200</zIndex>
+       </text>
+
+       <rating name="md_rating">
+          <pos>0.63 0.27</pos>
+          <size>0.23 0.05</size>
+          <filledPath>./_inc/images/rating_thumb_full.png</filledPath>
+          <unfilledPath>./_inc/images/rating_thumb_empty.png</unfilledPath>
+          <zIndex>200</zIndex>
+       </rating>
+
+       <!-- GÉNERO -->
+       <text name="md_genre">
+          <pos>0.63 0.33</pos>
+          <size>0.32 0.04</size>
+          <alignment>left</alignment>
+          <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+          <fontSize>0.030</fontSize>
+          <color>FFFFFF</color>
+          <zIndex>200</zIndex>
+       </text>
+
+       <!-- JUGADORES -->
+       <text name="md_players">
+          <pos>0.63 0.38</pos>
+          <size>0.32 0.04</size>
+          <alignment>left</alignment>
+          <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+          <fontSize>0.030</fontSize>
+          <color>FFFFFF</color>
+          <zIndex>200</zIndex>
+       </text>
+
+       <!-- Ocultamos el label "PLAYERS/JUGADORES" para que no se encime -->
+       <text name="md_lbl_players">
+          <pos>0 -1</pos>
+          <size>0 0</size>
+       </text>
+
+       <!-- DESCRIPCIÓN -->
+       <text name="md_description">
+          <pos>0.63 0.44</pos>
+          <size>0.32 0.40</size>
+          <alignment>left</alignment>
+          <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+          <fontSize>0.028</fontSize>
+          <color>FFFFFF</color>
+          <lineSpacing>1.25</lineSpacing>
+          <zIndex>200</zIndex>
+       </text>
+
+    </view>
+
     <!-- z-Indices for all elements -->
     <feature supported="z-index">
         <view name="video">
@@ -468,7 +559,9 @@ license:        Creative Commons NC-BY-SA-4.0
             <image name="md_image">
                 <zIndex>6</zIndex>
             </image>
-            <text name="md_lbl_rating, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_playcount, md_lbl_releasedate, md_lbl_lastplayed, md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
+            <text name="md_lbl_rating, md_lbl_developer, md_lbl_publisher, md_lbl_genre,
+                        md_lbl_players, md_lbl_playcount, md_lbl_releasedate, md_lbl_lastplayed,
+                        md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
                 <zIndex>40</zIndex>
             </text>
             <rating name="md_rating">
