@@ -155,18 +155,17 @@ license:        Creative Commons NC-BY-SA-4.0
             <text name="systemInfo">
         <backgroundColor>00000000</backgroundColor>
         <color>FFFFFF</color>
-                <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
-                <fontSize>0.0592592592592593</fontSize>
-
-        <pos>0.00 0.2222222222222222</pos>
+        <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+        <fontSize>0.0592592592592593</fontSize>
+	<pos>0.00 0.2322222222222222</pos>
         <size>1 0.050</size>
         <zIndex>102</zIndex>
       </text>
+      
       <image name="carousel_bar" extra="true">
         <path>./_inc/images/carousel_bar.png</path>
         <origin>0.5 0</origin>
-
-        <size>0 0.4814814814814815</size>
+	<size>0 0.4814814814814815</size>
         <pos>0.5 0.2185185185185185</pos>
         <zIndex>100</zIndex>
       </image>
@@ -210,7 +209,7 @@ license:        Creative Commons NC-BY-SA-4.0
             <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
             <fontSize>0.035</fontSize>
             <alignment>left</alignment>
-            <size>0.50 0.79</size>
+            <size>0.50 0.102</size>
             <pos>0.04 0.10</pos>
             <!-- Sonido de scroll controlado por plantilla -->
             <scrollSound>${scrollSoundList}</scrollSound>
@@ -287,18 +286,20 @@ license:        Creative Commons NC-BY-SA-4.0
         </image>
 
         <textlist name="gamelist">
-            <selectorColor>ffffff</selectorColor>
-            <selectedColor>373737</selectedColor>
+            <selectorColor>33000000</selectorColor>
+            <selectedColor>37d7c7</selectedColor>
             <primaryColor>ffffff</primaryColor>
             <secondaryColor>08304f</secondaryColor>
             <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
-            <fontSize>0.035</fontSize>
+            <fontSize>0.032</fontSize>
+            <lineSpacing>1.75</lineSpacing>
             <alignment>left</alignment>
-            <size>0.30 0.52</size>
-            <pos>0.04 0.36</pos>
+            <size>0.30 0.42</size>
+            <pos>0.04 0.409999999999999999</pos>
             <!-- Sonido de scroll para detailed / video (puede ser otro) -->
             <scrollSound>${scrollSoundDetailed}</scrollSound>
         </textlist>
+        
 
         <text name="md_lbl_rating, md_lbl_lastplayed">
             <color>50b8f8</color>
