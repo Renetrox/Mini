@@ -215,7 +215,31 @@ license:        Creative Commons NC-BY-SA-4.0
             <scrollSound>${scrollSoundList}</scrollSound>
         </textlist>
     </view>
-
+ <feature supported="navigationsounds">
+      <view name="all">
+         <sound name="systembrowse">
+            <path>./_inc/audio/systembrowse.wav</path>
+         </sound>
+         <sound name="quicksysselect">
+            <path>./_inc/audio/quicksysselect.wav</path>
+         </sound>
+         <sound name="select">
+            <path>./_inc/audio/select.wav</path>
+         </sound>
+         <sound name="back">
+            <path>./_inc/audio/back.wav</path>
+         </sound>
+         <sound name="scroll">
+            <path>./_inc/audio/scroll.wav</path>
+         </sound>
+         <sound name="favorite">
+            <path>./_inc/audio/favorite.wav</path>
+         </sound>
+         <sound name="launch">
+            <path>./_inc/audio/launch.wav</path>
+         </sound>
+      </view>
+   </feature>
     <!-- DETAILED / VIDEO VIEW -->
     <view name="detailed, video">
         <!-- Background Image Elements -->
@@ -440,6 +464,7 @@ license:        Creative Commons NC-BY-SA-4.0
             <showSnapshotDelay>true</showSnapshotDelay>
         </video>
     </view>
+       
 
     <!-- =====================
          SIMPLE GRID VIEW (UNIVERSAL)
@@ -572,6 +597,7 @@ license:        Creative Commons NC-BY-SA-4.0
                 <zIndex>40</zIndex>
             </datetime>
         </view>
-    </feature>
+        
+   </feature>
 
 </theme>
