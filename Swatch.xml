@@ -363,7 +363,7 @@ license:        Creative Commons NC-BY-SA-4.0
         <datetime name="md_lastplayed">
             <color>a0cf08</color>
             <fontPath>./_inc/fonts/CALIBRI.TTF</fontPath>
-            <fontSize>.04</fontSize>
+            <fontSize>0.03</fontSize>
             <pos>0.805 0.130</pos>
         </datetime>
 
