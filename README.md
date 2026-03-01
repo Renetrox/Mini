@@ -1,4 +1,5 @@
 # Mini
+<img width="640" height="720" alt="splash" src="https://github.com/user-attachments/assets/cc25be83-ff79-4e83-961b-b6c52d32c1c5" />
 
 <p align="center">
   <img src="wallpaper.jpg" alt="Mini theme banner" width="640" />
