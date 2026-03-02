@@ -95,23 +95,23 @@ license:        Creative Commons NC-BY-SA-4.0
         <origin>0 0</origin>
         <pos>0 0</pos>
         <size>1 1</size>
-        <path>./layout/psx/main1.png</path>
+        <path>./_inc/images/main1.png</path>
         <zIndex>90</zIndex>
       </image>
 
       <!-- Help -->
-      <image name="background2" extra="true">
-             <origin>0 0</origin>
-    		 <pos>0.75 0.06</pos>
-    		 <maxSize>0.19 0.19</maxSize>
-    		 <path>./layout/psx/gamelist_help.png</path>
-    		 <zIndex>100</zIndex>
-			</image>
+     <image name="background2" extra="true">
+        <origin>0 0</origin>
+    	<pos>0.35 0.06</pos>
+    	<maxSize>0.29 0.29</maxSize>
+    	<path>./_inc/images/system_help.png</path>
+    	<zIndex>100</zIndex>
+	</image>
 
       <!-- Logo sistema -->
       <image name="background3" extra="true">
    			 <origin>0 1</origin>   <!-- Origen en la parte inferior izquierda -->
-   			 <pos>0.05 0.10</pos>     <!-- Posición más a la izquierda (0.05) y manteniendo la altura (0.7) -->
+   			 <pos>0.07 0.96</pos>     <!-- Posición más a la izquierda (0.05) y manteniendo la altura (0.7) -->
    			 <maxSize>0.15 0.079</maxSize>    <!-- Tamaño pequeño -->
    			 <path>./_inc/logos/${system.theme}.svg</path>  <!-- Ruta del logo -->
    			 <zIndex>100</zIndex>    <!-- Asegura que se muestra encima de otros elementos -->
@@ -154,7 +154,7 @@ license:        Creative Commons NC-BY-SA-4.0
       <origin>0 0</origin>
       <pos>0 0</pos>
       <size>1 1</size>
-      <path>./layout/psx/main2.png</path>
+      <path>./_inc/images/main2.png</path>
       <zIndex>09</zIndex>
     </image>
 
@@ -178,7 +178,6 @@ license:        Creative Commons NC-BY-SA-4.0
       <alignment>left</alignment>
       <size>0.50 0.102</size>
       <pos>0.04 0.10</pos>
-      <scrollSound>./layout/psx/sound.wav</scrollSound>
     </textlist>
   </view>
 
@@ -278,7 +277,6 @@ license:        Creative Commons NC-BY-SA-4.0
       <alignment>left</alignment>
       <size>0.30 0.42</size>
       <pos>0.04 0.409999999999999999</pos>
-      <scrollSound>./layout/psx/sound.wav</scrollSound>
     </textlist>
 
     <text name="md_lbl_rating, md_lbl_lastplayed">
@@ -386,76 +384,149 @@ license:        Creative Commons NC-BY-SA-4.0
     </video>
   </view>
 
-  <!-- =====================
-       GRID (universal)
-       ===================== -->
-  <view name="grid">
+ <view name="grid">
 
-    <imagegrid name="gamegrid">
-      <pos>0.05 0.20</pos>
-      <size>0.55 0.60</size>
-      <margin>0.01 0.02</margin>
-      <padding>0.01 0.01</padding>
-      <imageSource>thumbnail</imageSource>
-      <zIndex>200</zIndex>
-    </imagegrid>
+  <!-- Fondo por sistema -->
+  <image name="background" extra="true">
+    <pos>0 0</pos>
+    <size>1 1</size>
+    <path>./_inc/images/wallpaper.jpg</path>
+    <zIndex>0</zIndex>
+  </image>
 
-    <text name="md_name">
-      <pos>0.63 0.20</pos>
-      <size>0.32 0.06</size>
-      <alignment>left</alignment>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
-      <fontSize>0.045</fontSize>
-      <color>FFFFFF</color>
-      <zIndex>200</zIndex>
-    </text>
+  <!-- Deco encima del fondo -->
+  <image name="gamelist_deco" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+    <path>./_inc/images/main1.png</path>
+    <zIndex>100</zIndex>
+  </image>
+  
+   <image name="bg_metadata" extra="true">
+        <path>./_inc/images/bg_metadata.png</path>
+        <origin>0.5 0.3</origin>
+        <size>0 0.1</size>
+        <pos>0.5 0.77</pos>
+        <zIndex>2</zIndex>
+      </image>
+  
+  <image name="carousel_bar" extra="true">
+        <path>./_inc/images/carousel_bar.png</path>
+        <origin>0.5 0</origin>
+        <size>0 0.4814814814814815</size>
+        <pos>0.5 0.2185185185185185</pos>
+        <zIndex>0</zIndex>
+      </image>
 
-    <rating name="md_rating">
-      <pos>0.63 0.27</pos>
-      <size>0.23 0.05</size>
-      <filledPath>./_inc/images/rating_thumb_full.png</filledPath>
-      <unfilledPath>./_inc/images/rating_thumb_empty.png</unfilledPath>
-      <zIndex>200</zIndex>
-    </rating>
+  <!-- Grid abajo -->
+  <imagegrid name="gamegrid">
+    <pos>0.05 0.37</pos>
+    <size>0.95 0.26</size>
+    <scrollDirection>horizontal</scrollDirection>
+    <centerSelection>true</centerSelection>
+    <scrollLoop>true</scrollLoop>
+    <animate>true</animate>
+    <autoLayout>7 1</autoLayout>
+    <autoLayoutSelectedZoom>1.30</autoLayoutSelectedZoom>
+    <margin>0.018 0.025</margin>
+    <zIndex>200</zIndex>
+  </imagegrid>
 
-    <text name="md_genre">
-      <pos>0.63 0.33</pos>
-      <size>0.32 0.04</size>
-      <alignment>left</alignment>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
-      <fontSize>0.030</fontSize>
-      <color>FFFFFF</color>
-      <zIndex>200</zIndex>
-    </text>
+<gridtile name="default">
+  <size>0.22 0.22</size>
+  <padding>0.01 0.01</padding>
 
-    <text name="md_players">
-      <pos>0.63 0.38</pos>
-      <size>0.32 0.04</size>
-      <alignment>left</alignment>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
-      <fontSize>0.030</fontSize>
-      <color>FFFFFF</color>
-      <zIndex>200</zIndex>
-    </text>
+  <backgroundImage>./_inc/icons/default.png</backgroundImage>
+  <backgroundCornerSize>0.0 0.0</backgroundCornerSize>
+  <backgroundColor>FFFFFFFF</backgroundColor>
+  <imageColor>FFFFFFFF</imageColor>
+</gridtile>
 
-    <text name="md_lbl_players">
-      <pos>0 -1</pos>
-      <size>0 0</size>
-    </text>
+<gridtile name="selected">
+  <size>0.26 0.26</size>
+  <backgroundImage>./_inc/icons/selected.png</backgroundImage>
+  <imageColor>FFFFFFFF</imageColor>
+</gridtile>
 
-    <text name="md_description">
-      <pos>0.63 0.44</pos>
-      <size>0.32 0.40</size>
-      <alignment>left</alignment>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
-      <fontSize>0.028</fontSize>
-      <color>FFFFFF</color>
-      <lineSpacing>1.25</lineSpacing>
-      <zIndex>200</zIndex>
-    </text>
+  <!-- Título -->
+  <text name="md_name">
+    <pos>0.32 0.225</pos>
+    <size>0.28 0.06</size>
+    <fontSize>0.045</fontSize>
+    <color>FFFFFFFF</color>
+    <zIndex>12</zIndex>
+  </text>
 
-  </view>
+<text name="md_lbl_developer">
+<pos>0.42 0.74</pos></text>
 
+  <!-- Chips: Developer • Genre (misma línea, como tu referencia) -->
+  <text name="md_developer">
+    <pos>0.42 0.78</pos>
+    <size>0.22 0.03</size>
+    <fontSize>0.030</fontSize>
+    <color>0faa9c</color>
+    <zIndex>12</zIndex>
+  </text>
+
+<text name="md_lbl_genre"><pos>0.69 0.74</pos></text>
+  <text name="md_genre">
+  <pos>0.655 0.78</pos>
+  <size>0.24 0.03</size>
+  <fontSize>0.030</fontSize>
+  <color>42acf6</color>
+  <zIndex>12</zIndex>
+</text>
+
+  <!-- Rating (un poco más “presente”) -->
+  <text name="md_lbl_rating"><pos>0.10 0.745</pos></text>
+  <rating name="md_rating">
+    <filledPath>./_inc/images/rating_thumb_full.png</filledPath>
+    <unfilledPath>./_inc/images/rating_thumb_empty.png</unfilledPath>
+    <color>FF0000</color>
+    <pos>0.098 0.786</pos>
+    <size>0.06 0.036</size>
+    <zIndex>12</zIndex>
+  </rating>
+  
+  
+
+<!-- Players -->
+<text name="md_lbl_players">
+<pos>0.31 0.76</pos>
+<fontSize>0.020</fontSize>
+</text>
+<text name="md_players">
+  <pos>0.308 0.69</pos>
+  <size>0.10 0.23</size>
+  <fontSize>0.020</fontSize>
+  <fontPath>./_inc/fonts/player_font4.ttf</fontPath>
+  <color>ffffff</color>
+  <zIndex>12</zIndex>
+</text>
+
+ 
+  <!-- Última vez -->
+  <text name="md_lbl_lastplayed">
+    <fontPath>./_inc/fonts/zrnic rg.ttf</fontPath>
+    <pos>0.22 0.76</pos>
+    <fontSize>0.020</fontSize>
+    <color>f8f8f8</color>
+    <zIndex>12</zIndex>
+  </text>
+
+  <datetime name="md_lastplayed">
+    <color>f8f8f8</color>
+    <fontPath>./_inc/fonts/zrnic rg.ttf</fontPath>
+    <fontSize>0.02</fontSize>
+    <pos>0.22 0.78</pos>
+    <zIndex>12</zIndex>
+  </datetime>
+
+</view>
+
+ 
   <!-- z-index feature (tu bloque original) -->
   <feature supported="z-index">
     <view name="video">
