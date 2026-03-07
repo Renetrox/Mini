@@ -57,7 +57,7 @@ license:        Creative Commons NC-BY-SA-4.0
     <helpsystem name="help">
       <textColor>ffffff</textColor>
       <iconColor>cccccc</iconColor>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
       <pos>0.045 -1</pos>
     </helpsystem>
   </view>
@@ -67,7 +67,7 @@ license:        Creative Commons NC-BY-SA-4.0
     <origin>0 0</origin>
     <pos>0.045 0.070005</pos>
     <size>1 1</size>
-    <path>./_inc/images/main1.png</path>
+    <path>./layout/snes/main1.png</path>
     <zIndex>100</zIndex>
   </image>
 
@@ -99,7 +99,7 @@ license:        Creative Commons NC-BY-SA-4.0
         <zIndex>90</zIndex>
       </image>
 
-      <!-- Help -->
+     <!-- Help -->
       <image name="background2" extra="true">
              <origin>0 0</origin>
     		 <pos>0.35 0.06</pos>
@@ -173,7 +173,7 @@ license:        Creative Commons NC-BY-SA-4.0
       <selectedColor>373737</selectedColor>
       <primaryColor>ffffff</primaryColor>
       <secondaryColor>08304f</secondaryColor>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
       <fontSize>0.035</fontSize>
       <alignment>left</alignment>
       <size>0.50 0.102</size>
@@ -271,76 +271,75 @@ license:        Creative Commons NC-BY-SA-4.0
       <selectedColor>37d7c7</selectedColor>
       <primaryColor>ffffff</primaryColor>
       <secondaryColor>08304f</secondaryColor>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
       <fontSize>0.032</fontSize>
       <lineSpacing>1.75</lineSpacing>
       <alignment>left</alignment>
       <size>0.30 0.42</size>
       <pos>0.04 0.409999999999999999</pos>
-      <scrollSound>./layout/snes/sound.wav</scrollSound>
     </textlist>
 
     <text name="md_lbl_rating, md_lbl_lastplayed">
       <color>50b8f8</color>
-      <fontPath>./_inc/fonts/CALIBRI.TTF</fontPath>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
       <fontSize>.04</fontSize>
     </text>
 
     <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_playcount, lbl_description, lbl_media">
-      <color>508cb0</color>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+      <color>6fa3c4</color>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
       <fontSize>0.020</fontSize>
       <forceUppercase>1</forceUppercase>
     </text>
 
     <text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
       <color>c8d0df</color>
-      <fontPath>./_inc/fonts/CALIBRIL.TTF</fontPath>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
       <fontSize>.025</fontSize>
     </text>
 
-    <text name="md_lbl_rating"><pos>0.37 0.130</pos></text>
+    <text name="md_lbl_rating"><pos>0.37 0.14</pos></text>
 
     <rating name="md_rating">
       <filledPath>./_inc/images/rating_thumb_full.png</filledPath>
       <unfilledPath>./_inc/images/rating_thumb_empty.png</unfilledPath>
-      <pos>0.51 0.130</pos>
-      <size>0.13 0.05</size>
+      <pos>0.52 0.14</pos>
+      <size>0.11 0.045</size>
     </rating>
 
-    <text name="md_lbl_lastplayed"><pos>0.69 0.130</pos></text>
+    <text name="md_lbl_lastplayed"><pos>0.69 0.14</pos></text>
 
     <datetime name="md_lastplayed">
       <color>a0cf08</color>
-      <fontPath>./_inc/fonts/CALIBRI.TTF</fontPath>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
       <fontSize>0.03</fontSize>
-      <pos>0.805 0.130</pos>
+      <pos>0.80 0.14</pos>
     </datetime>
 
-    <text name="md_lbl_developer"><pos>0.37 0.2</pos></text>
-    <text name="md_developer"><pos>0.45 0.202</pos><size>0.23 0.03</size></text>
+    <text name="md_lbl_developer"><pos>0.37 0.20</pos></text>
+    <text name="md_developer"><pos>0.48 0.20</pos><size>0.20 0.03</size></text>
 
     <text name="md_lbl_publisher"><pos>0.37 0.24</pos></text>
-    <text name="md_publisher"><pos>0.45 0.242</pos><size>0.23 0.03</size></text>
+    <text name="md_publisher"><pos>0.48 0.24</pos><size>0.20 0.03</size></text>
 
     <text name="md_lbl_releasedate"><pos>0.37 0.28</pos></text>
     <datetime name="md_releasedate">
       <color>c4d4dc</color>
       <fontSize>.025</fontSize>
-      <fontPath>./_inc/fonts/CALIBRILI.TTF</fontPath>
-      <pos>0.45 0.28</pos>
+      <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
+      <pos>0.48 0.28</pos>
     </datetime>
 
-    <text name="md_lbl_playcount"><pos>0.69 0.2</pos></text>
-    <text name="md_playcount"><pos>0.79 0.202</pos><size>0.14 0.03</size></text>
+    <text name="md_lbl_playcount"><pos>0.69 0.20</pos></text>
+    <text name="md_playcount"><pos>0.80 0.20</pos><size>0.12 0.03</size></text>
 
     <text name="md_lbl_genre"><pos>0.69 0.24</pos></text>
-    <text name="md_genre"><pos>0.79 0.242</pos><size>0.14 0.03</size></text>
+    <text name="md_genre"><pos>0.80 0.24</pos><size>0.12 0.01</size></text>
 
     <text name="md_lbl_players"><pos>0.69 0.28</pos></text>
     <text name="md_players">
-      <pos>0.79 0.282</pos>
-      <size>35 0.035</size>
+      <pos>0.80 0.28</pos>
+      <size>0.12 0.03</size>
       <fontPath>./_inc/fonts/player_font4.ttf</fontPath>
     </text>
 
@@ -385,11 +384,7 @@ license:        Creative Commons NC-BY-SA-4.0
     </video>
   </view>
 
-<!-- =========================
-     GRID VIEW (Game List)
-     ========================= -->
-
-<view name="grid">
+ <view name="grid">
 
   <!-- Fondo por sistema -->
   <image name="background" extra="true">
@@ -405,26 +400,28 @@ license:        Creative Commons NC-BY-SA-4.0
     <pos>0 0</pos>
     <size>1 1</size>
     <path>./layout/snes/main1.png</path>
-    <zIndex>5</zIndex>
+    <zIndex>10</zIndex>
   </image>
-  
-   <image name="bg_metadata" extra="true">
-        <path>./_inc/images/bg_metadata.png</path>
-        <origin>0.5 0.3</origin>
-        <size>0 0.1</size>
-        <pos>0.5 0.77</pos>
-        <zIndex>2</zIndex>
-      </image>
-  
-  <image name="carousel_bar" extra="true">
-        <path>./_inc/images/carousel_bar.png</path>
-        <origin>0.5 0</origin>
-        <size>0 0.4814814814814815</size>
-        <pos>0.5 0.2185185185185185</pos>
-        <zIndex>0</zIndex>
-      </image>
 
-  <!-- Grid abajo -->
+  <!-- Fondo metadata inferior -->
+  <image name="bg_metadata" extra="true">
+    <path>./_inc/images/bg_metadata.png</path>
+    <origin>0.5 0.3</origin>
+    <size>0 0.1</size>
+    <pos>0.5 0.77</pos>
+    <zIndex>2</zIndex>
+  </image>
+
+  <!-- Barra central -->
+  <image name="carousel_bar" extra="true">
+    <path>./_inc/images/carousel_bar.png</path>
+    <origin>0.5 0</origin>
+    <size>0 0.4814814814814815</size>
+    <pos>0.5 0.2185185185185185</pos>
+    <zIndex>0</zIndex>
+  </image>
+
+  <!-- Grid -->
   <imagegrid name="gamegrid">
     <pos>0.05 0.37</pos>
     <size>0.95 0.26</size>
@@ -438,54 +435,46 @@ license:        Creative Commons NC-BY-SA-4.0
     <zIndex>200</zIndex>
   </imagegrid>
 
-<gridtile name="default">
-  <size>0.22 0.22</size>
-  <padding>0.01 0.01</padding>
+  <!-- Tile normal -->
+  <gridtile name="default">
+    <size>0.22 0.22</size>
+    <padding>0.01 0.01</padding>
+    <backgroundImage>./_inc/icons/default.png</backgroundImage>
+    <backgroundCornerSize>0.0 0.0</backgroundCornerSize>
+    <backgroundColor>FFFFFFFF</backgroundColor>
+    <imageColor>FFFFFFFF</imageColor>
+  </gridtile>
 
-  <backgroundImage>./_inc/icons/default.png</backgroundImage>
-  <backgroundCornerSize>0.0 0.0</backgroundCornerSize>
-  <backgroundColor>FFFFFFFF</backgroundColor>
-  <imageColor>FFFFFFFF</imageColor>
-</gridtile>
+  <!-- Tile seleccionado -->
+  <gridtile name="selected">
+    <size>0.26 0.26</size>
+    <backgroundImage>./_inc/icons/selected.png</backgroundImage>
+    <imageColor>FFFFFFFF</imageColor>
+  </gridtile>
 
-<gridtile name="selected">
-  <size>0.26 0.26</size>
-  <backgroundImage>./_inc/icons/selected.png</backgroundImage>
-  <imageColor>FFFFFFFF</imageColor>
-</gridtile>
+  <!-- Tipografía base para labels del metadata -->
+  <text name="md_lbl_rating, md_lbl_lastplayed, md_lbl_players, md_lbl_developer, md_lbl_genre">
+    <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
+    <fontSize>0.020</fontSize>
+    <color>f8f8f8</color>
+    <zIndex>12</zIndex>
+  </text>
 
   <!-- Título -->
   <text name="md_name">
-    <pos>0.32 0.225</pos>
-    <size>0.28 0.06</size>
-    <fontSize>0.045</fontSize>
+    <pos>0.32 0.233</pos>
+    <size>0.30 0.03</size>
+    <fontSize>0.038</fontSize>
+    <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
     <color>FFFFFFFF</color>
     <zIndex>12</zIndex>
   </text>
 
-<text name="md_lbl_developer">
-<pos>0.42 0.74</pos></text>
-
-  <!-- Chips: Developer • Genre (misma línea, como tu referencia) -->
-  <text name="md_developer">
-    <pos>0.42 0.78</pos>
-    <size>0.22 0.03</size>
-    <fontSize>0.030</fontSize>
-    <color>0faa9c</color>
-    <zIndex>12</zIndex>
+  <!-- Rating -->
+  <text name="md_lbl_rating">
+    <pos>0.10 0.745</pos>
   </text>
 
-<text name="md_lbl_genre"><pos>0.69 0.74</pos></text>
-  <text name="md_genre">
-  <pos>0.655 0.78</pos>
-  <size>0.24 0.03</size>
-  <fontSize>0.030</fontSize>
-  <color>42acf6</color>
-  <zIndex>12</zIndex>
-</text>
-
-  <!-- Rating (un poco más “presente”) -->
-  <text name="md_lbl_rating"><pos>0.10 0.745</pos></text>
   <rating name="md_rating">
     <filledPath>./_inc/images/rating_thumb_full.png</filledPath>
     <unfilledPath>./_inc/images/rating_thumb_empty.png</unfilledPath>
@@ -494,44 +483,63 @@ license:        Creative Commons NC-BY-SA-4.0
     <size>0.06 0.036</size>
     <zIndex>12</zIndex>
   </rating>
-  
-  
 
-<!-- Players -->
-<text name="md_lbl_players">
-<pos>0.31 0.76</pos>
-<fontSize>0.020</fontSize>
-</text>
-<text name="md_players">
-  <pos>0.308 0.69</pos>
-  <size>0.10 0.23</size>
-  <fontSize>0.020</fontSize>
-  <fontPath>./_inc/fonts/player_font4.ttf</fontPath>
-  <color>ffffff</color>
-  <zIndex>12</zIndex>
-</text>
-
- 
   <!-- Última vez -->
   <text name="md_lbl_lastplayed">
-    <fontPath>./_inc/fonts/zrnic rg.ttf</fontPath>
     <pos>0.22 0.76</pos>
-    <fontSize>0.020</fontSize>
-    <color>f8f8f8</color>
-    <zIndex>12</zIndex>
   </text>
 
   <datetime name="md_lastplayed">
-    <color>f8f8f8</color>
-    <fontPath>./_inc/fonts/zrnic rg.ttf</fontPath>
-    <fontSize>0.02</fontSize>
     <pos>0.22 0.78</pos>
+    <fontSize>0.020</fontSize>
+    <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
+    <color>f8f8f8</color>
     <zIndex>12</zIndex>
   </datetime>
 
+  <!-- Players -->
+  <text name="md_lbl_players">
+    <pos>0.31 0.76</pos>
+  </text>
+
+  <text name="md_players">
+    <pos>0.31 0.78</pos>
+    <size>0.06 0.035</size>
+    <fontSize>0.020</fontSize>
+    <fontPath>./_inc/fonts/player_font4.ttf</fontPath>
+    <color>ffffff</color>
+    <zIndex>12</zIndex>
+  </text>
+
+  <!-- Developer -->
+  <text name="md_lbl_developer">
+    <pos>0.42 0.74</pos>
+  </text>
+
+  <text name="md_developer">
+    <pos>0.42 0.78</pos>
+    <size>0.22 0.03</size>
+    <fontSize>0.030</fontSize>
+    <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
+    <color>0faa9c</color>
+    <zIndex>12</zIndex>
+  </text>
+
+  <!-- Genre -->
+  <text name="md_lbl_genre">
+    <pos>0.69 0.74</pos>
+  </text>
+
+  <text name="md_genre">
+    <pos>0.655 0.78</pos>
+    <size>0.24 0.03</size>
+    <fontSize>0.030</fontSize>
+    <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
+    <color>42acf6</color>
+    <zIndex>12</zIndex>
+  </text>
+
 </view>
-
-
   <!-- z-index feature (tu bloque original) -->
   <feature supported="z-index">
     <view name="video">
