@@ -67,7 +67,7 @@ license:        Creative Commons NC-BY-SA-4.0
     <origin>0 0</origin>
     <pos>0.045 0.070005</pos>
     <size>1 1</size>
-    <path>./layout/n64/main1.png</path>
+    <path>./layout/DC/main1.png</path>
     <zIndex>100</zIndex>
   </image>
 
@@ -95,27 +95,27 @@ license:        Creative Commons NC-BY-SA-4.0
         <origin>0 0</origin>
         <pos>0 0</pos>
         <size>1 1</size>
-        <path>./layout/n64/main1.png</path>
+        <path>./layout/DC/main1.png</path>
         <zIndex>90</zIndex>
       </image>
 
-     <!-- Help -->
+      <!-- Help -->
       <image name="background2" extra="true">
-        <origin>0 0</origin>
-    	<pos>0.35 0.06</pos>
-    	<maxSize>0.29 0.29</maxSize>
-        <path>./layout/n64/gamelist_help.png</path>
-        <zIndex>100</zIndex>
-      </image>
+             <origin>0 0</origin>
+    		 <pos>0.75 0.06</pos>
+    		 <maxSize>0.19 0.19</maxSize>
+    		 <path>./layout/DC/gamelist_help.png</path>
+    		 <zIndex>100</zIndex>
+			</image>
 
       <!-- Logo sistema -->
       <image name="background3" extra="true">
-        <origin>0 1</origin>
-        <pos>0.44 0.95</pos>
-        <maxSize>0.15 0.077</maxSize>
-        <path>./_inc/logos/${system.theme}.svg</path>
-        <zIndex>100</zIndex>
-      </image>
+   			 <origin>0 1</origin>   <!-- Origen en la parte inferior izquierda -->
+   			 <pos>0.05 0.10</pos>     <!-- Posición más a la izquierda (0.05) y manteniendo la altura (0.7) -->
+   			 <maxSize>0.15 0.079</maxSize>    <!-- Tamaño pequeño -->
+   			 <path>./_inc/logos/${system.theme}.svg</path>  <!-- Ruta del logo -->
+   			 <zIndex>100</zIndex>    <!-- Asegura que se muestra encima de otros elementos -->
+			</image>
 
       <text name="systemInfo">
         <backgroundColor>00000000</backgroundColor>
@@ -138,7 +138,6 @@ license:        Creative Commons NC-BY-SA-4.0
     </view>
   </feature>
 
-
   <!-- =====================
        BASIC / DETAILED / VIDEO / GRID
        ===================== -->
@@ -155,15 +154,23 @@ license:        Creative Commons NC-BY-SA-4.0
       <origin>0 0</origin>
       <pos>0 0</pos>
       <size>1 1</size>
-      <path>./layout/n64/main2.png</path>
+      <path>./layout/DC/main2.png</path>
       <zIndex>09</zIndex>
     </image>
 
     <image name="logo">
-      <origin>0 0.66</origin>
-      <pos>0.0001 0.065</pos>
+      <origin>0 0</origin>
+    		 <pos>0.75 0.02</pos>
       <maxSize>0.10 0.10</maxSize>
     </image>
+    
+     <image name="System-logo" extra="true">
+   			 <origin>0 1</origin>   <!-- Origen en la parte inferior izquierda -->
+   			 <pos>0.05 0.10</pos>     <!-- Posición más a la izquierda (0.05) y manteniendo la altura (0.7) -->
+   			 <maxSize>0.15 0.079</maxSize>    <!-- Tamaño pequeño -->
+   			 <path>./_inc/logos/${system.theme}.svg</path>  <!-- Ruta del logo -->
+   			 <zIndex>100</zIndex>    <!-- Asegura que se muestra encima de otros elementos -->
+			</image>
 
   </view>
 
@@ -385,7 +392,7 @@ license:        Creative Commons NC-BY-SA-4.0
     </video>
   </view>
 
-<view name="grid">
+ <view name="grid">
 
   <!-- Fondo por sistema -->
   <image name="background" extra="true">
@@ -400,7 +407,7 @@ license:        Creative Commons NC-BY-SA-4.0
     <origin>0 0</origin>
     <pos>0 0</pos>
     <size>1 1</size>
-    <path>./layout/n64/main1.png</path>
+    <path>./layout/DC/main1.png</path>
     <zIndex>10</zIndex>
   </image>
 
@@ -408,8 +415,8 @@ license:        Creative Commons NC-BY-SA-4.0
   <image name="bg_metadata" extra="true">
     <path>./_inc/images/bg_metadata.png</path>
     <origin>0.5 0.3</origin>
-    <size>0.82 0.10</size>
-    <pos>0.50 0.77</pos>
+    <size>0 0.1</size>
+    <pos>0.5 0.77</pos>
     <zIndex>2</zIndex>
   </image>
 
@@ -421,15 +428,6 @@ license:        Creative Commons NC-BY-SA-4.0
     <pos>0.5 0.2185185185185185</pos>
     <zIndex>0</zIndex>
   </image>
-
-   <!-- Logo sistema -->
-      <image name="background3" extra="true">
-        <origin>0 1</origin>
-        <pos>0.44 0.95</pos>
-        <maxSize>0.15 0.077</maxSize>
-        <path>./_inc/logos/${system.theme}.svg</path>
-        <zIndex>100</zIndex>
-      </image>
 
   <!-- Grid -->
   <imagegrid name="gamegrid">
@@ -462,7 +460,7 @@ license:        Creative Commons NC-BY-SA-4.0
     <imageColor>FFFFFFFF</imageColor>
   </gridtile>
 
-  <!-- Labels metadata -->
+  <!-- Tipografía base para labels del metadata -->
   <text name="md_lbl_rating, md_lbl_lastplayed, md_lbl_players, md_lbl_developer, md_lbl_genre">
     <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
     <fontSize>0.020</fontSize>
@@ -489,7 +487,7 @@ license:        Creative Commons NC-BY-SA-4.0
     <filledPath>./_inc/images/rating_thumb_full.png</filledPath>
     <unfilledPath>./_inc/images/rating_thumb_empty.png</unfilledPath>
     <color>FF0000</color>
-    <pos>0.10 0.790</pos>
+    <pos>0.098 0.786</pos>
     <size>0.06 0.036</size>
     <zIndex>12</zIndex>
   </rating>
@@ -513,7 +511,7 @@ license:        Creative Commons NC-BY-SA-4.0
   </text>
 
   <text name="md_players">
-    <pos>0.31 0.785</pos>
+    <pos>0.31 0.78</pos>
     <size>0.06 0.035</size>
     <fontSize>0.020</fontSize>
     <fontPath>./_inc/fonts/player_font4.ttf</fontPath>
@@ -523,7 +521,7 @@ license:        Creative Commons NC-BY-SA-4.0
 
   <!-- Developer -->
   <text name="md_lbl_developer">
-    <pos>0.42 0.755</pos>
+    <pos>0.42 0.74</pos>
   </text>
 
   <text name="md_developer">
@@ -537,12 +535,12 @@ license:        Creative Commons NC-BY-SA-4.0
 
   <!-- Genre -->
   <text name="md_lbl_genre">
-    <pos>0.69 0.755</pos>
+    <pos>0.69 0.74</pos>
   </text>
 
   <text name="md_genre">
-    <pos>0.69 0.78</pos>
-    <size>0.22 0.03</size>
+    <pos>0.655 0.78</pos>
+    <size>0.24 0.03</size>
     <fontSize>0.030</fontSize>
     <fontPath>./_inc/fonts/NESCyrillic_gamelist.ttf</fontPath>
     <color>42acf6</color>
